@@ -14,7 +14,7 @@ header {
 }
 
 header h1 {
-    color: #c6be94;
+    color: #dfcf7c;
     font-size: 4rem;
     font-family: "Times New Roman", Times, serif
 }
@@ -29,6 +29,18 @@ article{
     margin: 0 auto 32px;
     padding: 6px 15px;
     border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+article:nth-child(2n){
+    background: #FDE1E1;
+    border-radius: 10px;
+}
+
+article:nth-child(1) h2::after,
+article:nth-child(2) h2::after{
+    content: " New";
+    color: #Ba2121;
+    font-style: italic;
 }
 
 article a{
@@ -54,6 +66,7 @@ article img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 footer{
